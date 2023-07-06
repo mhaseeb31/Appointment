@@ -1,0 +1,46 @@
+#!/bin/bash
+
+#Set root_folder to the directory which contains run.sh
+root_folder="/home/haseeb/visa/isla"
+consulate_details="locationCode=isla&realmId=108&categoryId=203"
+rescheduling_token="2dddssasdfvkoadausiva98fash9f1"
+
+
+#User DATA for appointment
+#citizenship="Pakistanisch/Pakistani"
+#citizenship="${citizenship//\//%2F}"  # Escape "/" with "%2F"
+
+
+lastname="Zahid"
+firstname="Mahmood"
+email="haseebc2c001@gmail.com"
+emailrepeat="haseebc2c001@gmail.com"
+#phone_content="0765677776"
+#phone_definitionId="9008"
+#phone_index="0"
+passport_content="DW0159013"
+passport_definitionId="6765"
+passport_index="0"
+citizenship_content="Pakistanisch%2FPakistani"
+citizenship_definitionId="6768"
+citizenship_index="1"
+#birthdate="03.07.1995"
+#birthdate_content="1995-07-03"
+#birthdate_definitionId="9010"
+#birthdate_index="2"
+#purpose_content="Visumbeantragung%2F+Visa+application"
+#purpose_definitionId="9011"
+#purpose_index="3"
+locationCode="isla"
+realmId="108"
+categoryId="203"
+email="${email/@/%40}"  # Escape "@" sign with "%40"
+emailrepeat="${emailrepeat/@/%40}"  # Escape "@" sign with "%40"
+
+
+
+#DO NOT EDIT THESE
+consulate_base_url="https://service2.diplo.de/rktermin/extern/appointment_showMonth.do"
+rescheduling_base_url="https://service2.diplo.de/rktermin/extern/appointment_showDay.do"
+booking_base_url="https://service2.diplo.de/rktermin/extern/appointment_showForm.do"
+host="https://service2.diplo.de/rktermin"
