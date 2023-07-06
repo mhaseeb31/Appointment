@@ -32,7 +32,8 @@ Then put run.sh to cron
 
 ### Configurations
 * The logic to determine if a available date is useful enough to notify the user is made in `lib/parse_response.py`. Edit it according to your requirements
+* Varies from website to website
 
 ### Enhancements
-* Notify deathbycaptcha when captcha is wrong
-* Automatically book appointment instead of just notifying
+* Added curl command for islamabad, for other cities curl command needs to be changed
+* All the defined parameters will be changed in setenv file.
